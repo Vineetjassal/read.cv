@@ -8,15 +8,15 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f5f0ff] to-white">
-      <div className="max-w-5xl mx-auto py-8">
+      <div className="md:max-w-5xl max-w-screen-sm mx-auto py-8">
         {/* Header */}
-        <header className="sticky top-4 z-50 flex justify-between items-center py-3 px-6 rounded-full border-2 backdrop-blur-md bg-white/60 shadow-md">
-          <Link href="/" className="text-3xl font-semibold flex">
-            <File className="mr-2 mt-1 -rotate-6" size={30} />
+        <header className="sticky top-4 z-50 flex justify-between items-center md:py-3 md:px-6 py-2 px-4 rounded-full border-2 backdrop-blur-md bg-white/60 shadow-md">
+          <Link href="/" className="md:text-3xl text-xl font-semibold flex">
+            <File className="mr-2 md:mt-1 mt-0 -rotate-6" size={30} />
             read.cv
           </Link>
-          <div className="flex items-center gap-3">
-            <Link href={""}><Github size={20} /></Link>
+          <div className="flex items-center md:gap-3 gap-1">
+            <Link href={""} className="mr-1"><Github size={20} /></Link>
             <Link href="/login" className="text-md font-medium text-black rounded-full px-4 py-2 border-grey border-2">
               Log in
             </Link>
@@ -122,11 +122,9 @@ export default function LandingPage() {
           </div>
 
           {/* Feature Section 1 */}
-          <div className="w-full mb-24">
-            <div className="bg-purple-100 rounded-lg p-4 text-center mb-6">
-              <span className="text-sm font-medium">Try This</span>
-            </div>
-            <h2 className="text-2xl font-bold text-center mb-2">So Easy, It's Scary</h2>
+          <div className="bg-purple-100 p-4 rounded-xl">
+          <div className="w-full mb-12">
+            <h2 className="text-3xl font-bold text-center mb-2">So Easy, It's Scary</h2>
             <p className="text-center text-gray-600 mb-8">We're not responsible for sudden fame</p>
 
             <div className="relative">
@@ -136,45 +134,41 @@ export default function LandingPage() {
 
           {/* Feature Grid */}
 {/* Feature Grid */}
-<div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-  <div className="text-center border border-gray-300 rounded-lg p-6">
-    <h3 className="font-bold mb-2 text-2xl">Upload Resumes</h3>
+<div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-4 mb-4 ">
+  <div className="text-center border border-gray-300 rounded-lg bg-white md:p-6 p-4">
+    <h3 className="font-bold mb-2 text-3xl">Upload Resumes</h3>
     <p className="text-md text-gray-600">Recruiters can upload all candidate resumes for AI processing</p>
-    <div className=" h-40 flex items-center justify-center text-gray-500">
+    <div className="h-40 flex items-center justify-center text-gray-500">
       <UploadCloud size={80} />
     </div>
   </div>
-  <div className="text-center border border-gray-300 rounded-lg p-6">
-    <h3 className="font-bold mb-2 text-2xl">AI-Powered Ranking</h3>
+  <div className="text-center border border-gray-300 bg-white rounded-lg p-6">
+    <h3 className="font-bold mb-2 text-3xl">AI-Powered Ranking</h3>
     <p className="text-md text-gray-600">Resumes ranked based on recruiter needs and specified keywords</p>
     <div className="h-40 flex items-center justify-center text-gray-500">
       <Settings size={80} />
     </div>
   </div>
-  <div className="text-center border border-gray-300 rounded-lg p-6">
-    <h3 className="font-bold mb-2 text-2xl">Download Ranked List</h3>
+  <div className="text-center border border-gray-300 bg-white rounded-lg p-6">
+    <h3 className="font-bold mb-2 text-3xl">Download Ranked List</h3>
     <p className="text-md text-gray-600">Export ranked candidates and their details in an Excel file</p>
     <div className="h-40 flex items-center justify-center text-gray-500">
       <FileDown size={80} />
     </div>
   </div>
 </div>
-
+</div>
 
          
 
           {/* Dark Section */}
-          <section className="w-full">
-          <div className="h-[60rem] rounded-md flex flex-col md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden mb-16">
+          <section className="w-full mt-16">
+          <div className="h-[50rem] md:rounded-md flex flex-col md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden mb-16">
       <Spotlight />
       <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 text-center">
         <h1 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          Spotlight <br /> which is not overused.
+        AI-Powered Resume Ranking for Recruiters
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg mx-auto">
-          A subtle yet effective spotlight effect, because the previous version
-          is used a bit too much these days.
-        </p>
         
         {/* Centered Image */}
         <div className="mt-8 flex justify-center">
@@ -186,11 +180,6 @@ export default function LandingPage() {
             className="rounded-lg shadow-lg"
           />
         </div>
-
-        {/* AI-Powered Resume Ranking Section */}
-        <p className="mt-6 text-lg text-neutral-200 font-semibold">
-          AI-Powered Resume Ranking for Recruiters
-        </p>
       </div>
     </div>
     </section>
@@ -199,7 +188,7 @@ export default function LandingPage() {
           {/* Final CTA */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-2">So, ready to become a recruiting superstar?</h2>
-            <p className="text-gray-600 mb-8">It's easier than making coffee (and less messy, probably)</p>
+            <p className="text-gray-600 mb-8 text-md px-4">It's easier than making coffee (and less messy, probably)</p>
             <Link
               href="/signup"
               className="inline-flex bg-purple-500 hover:bg-purple-600 font-semibold text-white rounded-full px-6 py-2.5"
