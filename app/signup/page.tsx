@@ -90,9 +90,10 @@ export default function SignupPage() {
             </div>
             
             {/* Right Column - Image */}
-            <div className="relative w-full h-full">
-              <Image src={Readcv} alt="Readcv" className="w-full h-full object-cover" />
-            </div>
+<div className="relative w-full h-full hidden md:block">
+  <Image src={Readcv} alt="Readcv" className="w-full h-full object-cover" />
+</div>
+
           </div>
         </div>
       </div>
