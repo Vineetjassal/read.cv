@@ -16,7 +16,7 @@ export default function LandingPage() {
             read.cv
           </Link>
           <div className="flex items-center md:gap-3 gap-1">
-            <Link href={""} className="mr-1"><Github size={20} /></Link>
+            <Link href="https://github.com/Vineetjassal/read.cv/" className="mr-1" target="_blank"><Github size={20} /></Link>
             <Link href="/login" className="text-md font-medium text-black rounded-full px-4 py-2 border-grey border-2">
               Log in
             </Link>
@@ -29,7 +29,7 @@ export default function LandingPage() {
         {/* Hero Section */}
         <main className="mt-16 flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full mb-8">
-            <span className="text-sm font-medium">✨ AI features are now live</span>
+            <span className="text-sm font-medium">✨ It's Opensource Project</span>
             <span className="text-xs px-1.5 py-0.5 bg-purple-600 text-white rounded-full">New</span>🎉
           </div>
 
